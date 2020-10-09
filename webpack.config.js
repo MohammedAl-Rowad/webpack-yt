@@ -1,11 +1,14 @@
 const { resolve, join } = require('path')
 
+const jsSrc = join(__dirname, 'src', 'js')
+
 module.exports = {
   entry: {
-    main: join(__dirname, 'src', 'js', 'main.js')
+    main: join(jsSrc, 'main.js'),
+    aboutPage: join(jsSrc, 'pages', 'aboutPage.js'),
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: resolve(__dirname, 'dist'),
   },
 }

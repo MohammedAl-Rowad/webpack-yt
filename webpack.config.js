@@ -9,9 +9,9 @@ const scssSrc = join(base, 'scss')
 
 module.exports = {
   entry: {
-    main: join(jsSrc, 'main.js'),
-    aboutPage: join(jsSrc, 'pages', 'aboutPage.js'),
-    mainCSS: join(scssSrc, 'main.scss') 
+    'js/main': join(jsSrc, 'main.js'),
+    'js/aboutPage': join(jsSrc, 'pages', 'aboutPage.js'),
+    'css/main': join(scssSrc, 'main.scss') 
   },
   output: {
     filename: '[name].js',

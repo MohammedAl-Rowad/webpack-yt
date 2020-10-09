@@ -1,5 +1,5 @@
 import { compose } from 'underscore'
-import '../scss/main.scss'
+// import '../scss/main.scss'
 
 const func = () => {
   alert('rowadz')

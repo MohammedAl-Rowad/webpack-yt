@@ -19,11 +19,13 @@
   "homepage": "https://github.com/MohammedAl-Rowad/webpack-yt#readme",
   "devDependencies": {
     "css-loader": "^4.3.0",
+    "mini-css-extract-plugin": "^1.0.0",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.3",
     "style-loader": "^2.0.0",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-fix-style-only-entries": "^0.5.2"
   },
   "dependencies": {
     "underscore": "^1.11.0"

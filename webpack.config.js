@@ -26,14 +26,7 @@ module.exports = {
           // 'style-loader',
           MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              url: false,
-              importLoaders: 1,
-            },
-          },
+          'css-loader',
           // Compiles Sass to CSS
           'sass-loader',
         ],

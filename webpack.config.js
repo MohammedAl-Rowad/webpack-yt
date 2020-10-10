@@ -33,6 +33,11 @@ module.exports = {
       },
       {
         test: /\.*js$/,
+        // https://stackoverflow.com/questions/54156617/why-would-we-exclude-node-modules-when-using-babel-loader
+        // In short, transpiling is an expensive process and many projects have thousands (if not hundreds of thousands) 
+        // of lines of code imported in that babel would need to run over. Your node_modules should already be runnable without transpiling 
+        // as said already and there are simple ways to exclude your node_modules but transpile any code that needs it. 
+        // See https://github.com/babel/babel-loader/issues/171.
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',

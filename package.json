@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "webpack --mode development"
+    "bundle": "webpack --mode development",
+    "bundle:watch": "npm run bundle -- --watch"
   },
   "repository": {
     "type": "git",

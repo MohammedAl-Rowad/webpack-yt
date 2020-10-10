@@ -8,6 +8,7 @@ const jsSrc = join(base, 'js')
 const scssSrc = join(base, 'scss')
 
 module.exports = {
+  // watch: true, use `-- watch` in the npm scripts
   entry: {
     'js/main': join(jsSrc, 'main.js'),
     'js/aboutPage': join(jsSrc, 'pages', 'aboutPage.js'),
